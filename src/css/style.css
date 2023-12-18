@@ -1,8 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
 
-/* font-family: 'Inter', sans-serif;
-font-family: 'Lexend Deca', sans-serif; */
-
 
 *,
 *::before,
@@ -65,14 +62,14 @@ h2 {
     width: 100%;
 }
 
-.card-component_img picture {
+.card-component_img {
     background: var(--soft-violet);
 }
 
 .card-component_img img {
     width: 100%;
     mix-blend-mode: multiply;
-    opacity: 0.7;
+    opacity: 0.8;
 }
 
 .card-component_details {
@@ -108,6 +105,57 @@ h2 {
     margin-top: 0.125rem;
     text-transform: uppercase;
     letter-spacing: 0.063rem;
+}
+
+
+@media (min-width: 756px) {
+
+    img, picture {
+        min-height: 100%;
+    }
+
+    h1 {
+        font-size: 2.25rem;
+    }
+
+    .card-component {
+        display: flex;
+        flex-direction: row-reverse;
+        max-width: 1110px;
+        max-height: 446px;
+    }
+
+    .card-component_details {
+        display: flex;
+        flex-direction: column; 
+        padding: 4.43rem 5.93rem 3.68rem 4.43rem;
+        margin-top: 0;
+        text-align: left;
+    }
+    
+
+
+    .card-component-details_header {
+        margin-right: 3rem;
+    }
+
+    .card-component-details_header p {
+        margin-top: 1.5rem;
+        
+    }
+
+    .card-component-details_info {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-right: 4.37rem;
+        margin-top: 4.5rem;
+        margin-bottom: 0;
+    }
+
+    .card-component-details_item p {
+        margin-top: 0.125rem;
+    }
 }
 
 
